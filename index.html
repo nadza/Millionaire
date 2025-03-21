@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="bs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Ko želi biti milioner?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body>
+    <div id="menu" class="h-100 d-flex align-items-center justify-content-center">
+        <div class="p-3 text-center">
+            <h1>Ko želi biti milioner?</h1>
+            <button id="dugme_igra" type="button" class="btn btn-primary btn-lg btn-block">Započni novu igru</button>
+            <button id="dugme_uputstvo" type="button" class="btn btn-primary btn-lg btn-block">Uputstva</button>
+            <button id="dugme_projekat" type="button" class="btn btn-primary btn-lg btn-block">O Projektu</button>
+        </div>
+    </div> 
+
+    <div id="igra" class="container-fluid h-100 d-none align-items-center justify-content-center text-center">
+        <div id="igrica"  class="omotac">
+            <div class="row">
+                <div class="col-12 col-md-4 mb-2 mb-md-0 mt-3">
+                    <button id="nazad_igrica" type="button" class="btn btn-primary"><i class="fa fa-angle-left"></i></button>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div id="novac" class="mt-3 p-3 w-100 mx-auto">
+                        <p id="postavi_novac"></p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mt-3">
+                    <button id="kraj" type="button" class="btn btn-primary" onclick="myFunction()">KRAJ</button>
+                </div>
+            </div>
+            <div id="timer" class="d-flex align-items-center justify-content-center mx-auto">
+                <h3 id="tajmer"></h3>
+            </div>
+            <div id="pitanje" class="p-3 w-75 mx-auto">
+                <p id="pitanje_tekst">What issue will you always speak your mind about?</p>
+            </div>
+            <div class="dugmici mt-3">
+                <button id="prvi" type="button" class="w-50 m-2 btn btn-primary"><span id="odgovor1">a</span></button>
+                <button id="drugi" type="button" class="w-50 m-2 btn btn-primary"><span id="odgovor2">b</span></button>
+                <br>
+                <button id="treci" type="button" class="w-50 m-2 btn btn-primary"><span id="odgovor3">c</span></button>
+                <button id="cetvrti" type="button" class="w-50 m-2 btn btn-primary"><span id="odgovor4">d</span></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="uputstvo" class="d-none container">
+        <div class="styling p-3">
+            <button id="nazad_uputa" type="button" class="btn btn-primary mb-3"><i class="fa fa-angle-left"></i></button>
+            <h1>O igri:</h1>
+            <p>Igra "Ko želi biti milioner?" predstavlja niz pitanja s višestrukim izborom od kojih svako ima četiri moguća odgovora (A,B,C,D). 
+            Natjecatelj mora tačno odgovoriti na 15 od ovih pitanja, jedno po jedno, kako bi osvojio milion maraka. Čim natjecatelj netačno 
+            odgovori na pitanje, igra je gotova.
+            </p>
+            <h1>Pravila igre: </h1>
+            <ol class="px-3">
+                <li>Igra se sastoji od 15 rundi. Pitanja su organizirana u piramidu, tj. težina i vrijednost nagrade rastu kako natjecatelj napreduje.</li>
+                <li>Svako pitanje predstavljeno je u formatu višestrukog izbora, gdje natjecatelj mora odabrati tačan odgovor iz niza opcija.</li>
+                <li>Natjecatelji mogu odlučiti prestati igrati i uzeti novčanu nagradu koju su zaradili u bilo kojem trenutku. Međutim, ako netačno odgovore na pitanje, mogu izgubiti značajan dio svojih akumuliranih dobitaka.</li>
+                <li>Konačni cilj je doći do konačnog pitanja i tačno odgovoriti na njega kako biste osvojili glavnu nagradu, tj. milion maraka.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div id="projekat" class="d-none container">
+        <div class="styling p-3" id="o_projektu">
+            <button id="nazad_projekat" type="button" class="btn btn-primary mb-3"><i class="fa fa-angle-left"></i></button>
+            <h1>O projektu: </h1>
+            <p>U nastavku možete pronaći pregled bitnih informacija o projektu:</p>
+            <ul class="px-3">
+                <li>Kurs: CS 320 web programiranje
+                    <ul class="px-3">
+                        <li>Profesor: Doc. dr. Sead Delalić</li>
+                        <li>Asistent: Irhad Fejzić</li>
+                    </ul>
+                </li>
+                <li>Akademski studij: Prvi ciklus studija, Odsjek za matematiku, Teorijska kompjuterska nauka</li>
+                <li>Fakultet: Prirodno-matematički fakultet, Univerzitet u Sarajevu</li>
+                <li>Naziv projekta: Ko želi biti milioner?</li>
+                <li>Autor: Nadža Zahiragić
+                    <ul class="px-3">
+                        <li>E-mail: zahiragicnadza@gmail.com</li>
+                        <li>Tel.: +387 60 12 23 34</li>
+                        <li><a href="https://ba.linkedin.com/in/nad%C5%BEa-zahiragi%C4%87-8a6461292" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/game.js"></script>
+    <script src="./js/logic.js"></script>
+  </body>
+</html>

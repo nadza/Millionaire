@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: url('images/bg.png');
+    background-size: cover;
+}
+
+#pozadina {
+    height: 100vh;
+    background: url('images/bg.jpg');
+    background-size: cover;
+  }
+
+h1 {
+    font-family: 'Archivo Black', sans-serif !important;
+    text-shadow: 2px 2px 8px black !important;
+    color: white !important;
+}
+
+.styling {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 74vh;
+    background-color: rgba(26, 84, 191, 0.8);
+    color: white;
+    border-radius: 10px; 
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#o_projektu {
+    height: 64vh;
+}
+
+#igrica {
+    background-color: rgba(26, 84, 191, 0.8);
+    border-radius: 10px; 
+    height: 80vh;
+    width: 60%;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#novac {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#novac > p {
+    margin-bottom: 0;
+    font-size: 3vh;
+}
+
+#pitanje {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px; 
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#timer {
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 5vh 35vh 5vh 35vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+span {
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+}
